@@ -58,7 +58,7 @@
             } else {
                 next = (step==='3') ? '/done' : '/'+size+'-bean/'+(parseInt(step,10) + 1);
             }
-            console.log('submitted',size,step);
+            // console.log('submitted',size,step);
             $location.path(next);
         };
 
@@ -69,7 +69,6 @@
             $rootScope.question = 'Who are you';
             $rootScope.showtheend = false;
         } else if ($location.path()==='/next') {
-        console.log('AAA', $location.path());
             $rootScope.question = 'Who \'s next?';
             $rootScope.showtheend = true;
         } else { // CR- TODO: use the right path/regex
@@ -79,7 +78,7 @@
 
             $rootScope.step = ($routeParams.question==='start') ? '1' : $routeParams.question;
 
-            console.log(pathArray,personBean,$routeParams.question, $rootScope.step);
+            // console.log(pathArray,personBean,$routeParams.question, $rootScope.step);
 
             if(personBean==='little-bean') {
                 $http.get('//cosmic-hackathon.herokuapp.com/questionnaire').success(function (data) {
@@ -137,52 +136,11 @@
                 }
             }
 
-            console.log($routeParams, $location.path());
-
-            // var fullRoute = $rootScope.$$route.originalPath,
-            // routeParams = $rootScope.params,
-            // resolvedRoute;
-            // console.log('2',fullRoute);
-            // console.log('3',routeParams);
-            // resolvedRoute = fullRoute.replace(/:var1/, routeParams.id);
-            // console.log('4', resolvedRoute);
+            // console.log($routeParams, $location.path());
 
         }
 
-        // console.log('$routeParams', $routeParams);
-
-        // register listener to watch route changes
-        // $rootScope.$on( '$routeChangeStart', function () {
-        //     if ($location.path()==='/') {
-        //         console.log('BBB = root');
-        //     }
-        // });
-
-        // $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
-        //     var fullRoute = current.$$route.originalPath,
-        //     routeParams = current.params,
-        //     resolvedRoute;
-        //     console.log('1',e, current, pre);
-        //     console.log('2',fullRoute);
-        //     console.log('3',routeParams);
-        //     resolvedRoute = fullRoute.replace(/:var1/, routeParams.id);
-        //     console.log('4', resolvedRoute);
-        // });
-
-
-        // $rootScope.changeRoute = function(page) {
-        //     console.log('AAAA', page);
-        //     if($location.path() !== page) {
-        //         $location.path(page).replace();
-        //     }
-        // };
-
 	});
 
-	// cosmicApp.run(function ($rootScope, $location, $routeParams) {
- //        $rootScope.changeRoute = function(page) {
- //            if($location.path() !== page) {
- //                $location.path(page).replace();
- //            }
- //        };
- //    });
+    //  cosmicApp.run(function ($rootScope, $location, $routeParams) {
+    //  });
