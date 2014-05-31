@@ -16,9 +16,13 @@
                 controller  : 'mainController'
             })
 
-
-            .when('/:person/done', {
+            .when('/done', {
                 templateUrl : 'partials/done.html',
+                controller  : 'mainController'
+            })
+
+            .when('/comment', {
+                templateUrl : 'partials/comment.html',
                 controller  : 'mainController'
             })
 
@@ -44,12 +48,12 @@
         $rootScope.submit = function(size,step) {
             var next;
             if(size==='big') {
-                next = (step==='4') ? 'done' : (parseInt(step,10) + 1);
+                next = (step==='6') ? '/done' : '/'+size+'-bean/'+(parseInt(step,10) + 1);
             } else {
-                next = (step==='4') ? 'done' : (parseInt(step,10) + 1);
+                next = (step==='4') ? '/done' : '/'+size+'-bean/'+(parseInt(step,10) + 1);
             }
             console.log('submitted',size,step);
-            $location.path('/'+size+'-bean/'+next);
+            $location.path(next);
         };
 
         if ($location.path()==='/') {
@@ -66,11 +70,9 @@
 
             $rootScope.step = ($routeParams.question==='start') ? 1 : $routeParams.question;
 
-            if(personBean==='small-bean') {
+            if(personBean==='little-bean') {
                 $rootScope.question = 'Question here!';
             }
-            // } else if(personBean==='big-bean') {}
-
 
             console.log($routeParams, $location.path());
 
@@ -82,9 +84,6 @@
             // resolvedRoute = fullRoute.replace(/:var1/, routeParams.id);
             // console.log('4', resolvedRoute);
 
-            // if() {
-
-            // }
         }
 
         // console.log('$routeParams', $routeParams);

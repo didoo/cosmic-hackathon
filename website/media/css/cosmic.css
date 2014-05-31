@@ -203,4 +203,29 @@ footer {
     position: absolute;
     top: 210px;
     left: 50%;
-    margin-left: -450px; }
+    margin-left: -500px; }
+  #done a {
+    position: absolute;
+    width: 200px;
+    height: 100px; }
+  #done .continue {
+    top: 329px;
+    left: 773px; }
+  #done .comment {
+    top: 375px;
+    left: 48px; }
+
+#comment {
+  background-position: 50% 610px; }
+  #comment img {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    margin-left: -500px; }
+  #comment a {
+    position: absolute;
+    width: 200px;
+    height: 100px; }
+  #comment .continue {
+    top: 349px;
+    left: 780px; }

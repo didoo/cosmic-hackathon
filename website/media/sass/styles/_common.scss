@@ -211,7 +211,39 @@ footer {
         position: absolute;
         top: 210px;
         left: 50%;
-        margin-left: -450px;
+        margin-left: -500px;
+    }
+    a {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+    }
+    .continue {
+        top: 329px;
+        left: 773px;
+    }
+    .comment {
+        top: 375px;
+        left: 48px;
+    }
+}
+
+#comment {
+    background-position: 50% 610px;
+    img {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        margin-left: -500px;
+    }
+    a {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+    }
+    .continue {
+        top: 349px;
+        left: 780px;
     }
 }
 
