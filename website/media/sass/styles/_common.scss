@@ -196,6 +196,13 @@ footer {
             transform: scale(1.05);
         }
     }
+
+    &.big {
+        img {
+            max-width: 1024px;
+            max-height: 768px;
+        }
+    }
 }
 
 #done {

@@ -193,6 +193,9 @@ footer {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05); }
+#question.big img {
+  max-width: 1024px;
+  max-height: 768px; }
 
 #done {
   background-position: 50% 610px; }

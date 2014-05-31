@@ -41,6 +41,16 @@
 	// create the controller and inject Angular's $rootScope
 	cosmicApp.controller('mainController', function($rootScope, $location, $routeParams) {
 
+        $rootScope.submit = function(size,step) {
+            var next;
+            if(size==='big') {
+                next = (step==='4') ? 'done' : (parseInt(step,10) + 1);
+            } else {
+                next = (step==='4') ? 'done' : (parseInt(step,10) + 1);
+            }
+            console.log('submitted',size,step);
+            $location.path('/'+size+'-bean/'+next);
+        };
 
         if ($location.path()==='/') {
             $rootScope.message = 'Homepage';
@@ -108,4 +118,9 @@
 	});
 
 	// cosmicApp.run(function ($rootScope, $location, $routeParams) {
+ //        $rootScope.changeRoute = function(page) {
+ //            if($location.path() !== page) {
+ //                $location.path(page).replace();
+ //            }
+ //        };
  //    });
