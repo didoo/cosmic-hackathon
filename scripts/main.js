@@ -81,7 +81,7 @@
             // console.log(pathArray,personBean,$routeParams.question, $rootScope.step);
 
             if(personBean==='little-bean') {
-                $http.get('//cosmic-hackathon.herokuapp.com/questionnaire').success(function (data) {
+                $http.get('//cosmic-hackathon.herokuapp.com/feedback').success(function (data) {
                     // angular.forEach(hourlyDataRange, function (elem, key) {
                     //     var intkey = parseInt(key, 10);
                     //     if (typeof when !== 'undefined') {
