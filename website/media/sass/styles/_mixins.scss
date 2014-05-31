@@ -1,0 +1,10 @@
+
+@mixin hide-text() {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+@mixin calc($property, $calc) {
+    #{$property}: -webkit-calc(#{$calc});
+    #{$property}: calc(#{$calc});
+}

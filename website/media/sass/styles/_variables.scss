@@ -1,0 +1,67 @@
+// VARIABLES //
+
+// Colors
+// -------------------------
+
+// flat ui kit
+// $color-turquoise:               #1abc9c;
+// $color-green-sea:               #16a085;
+// $color-emerald:                 #2ecc71;
+// $color-nephritis:               #27ae60;
+// $color-peter-river:             #3498db;
+// $color-belize-hole:             #2980b9;
+// $color-amethyst:                #9b59b6;
+// $color-wisteria:                #8e44ad;
+// $color-wet-asphalt:             #34495e;
+// $color-midnight-blue:           #2c3e50;
+// $color-sun-flower:              #f1c40f;
+// $color-orange:                  #f39c12;
+// $color-carrot:                  #e67e22;
+// $color-pumpkin:                 #d35400;
+// $color-alizarin:                #e74c3c;
+// $color-pomegranate:             #c0392b;
+// $color-clouds:                  #ecf0f1;
+// $color-silver:                  #bdc3c7;
+// $color-concrete:                #95a5a6;
+// $color-asbestos:                #7f8c8d;
+
+// -- base colors ---
+$color-body-background:  #D8CEAD;
+$color-text-base:        #1D1D1B;
+
+// -- beans colors ---
+$color-bean-green: #009D4A;
+
+
+// Links
+// -------------------------
+$link-color:            #CC0000;
+$link-hover-color:      #00CC00;
+
+
+// Typography
+// -------------------------
+$font-family-cartwheel:   "Cartwheel", "Comic Sans MS", cursive, sans-serif;
+
+$font-family-base:        $font-family-cartwheel;
+$font-size-base:          16px;
+$line-height-base:        1.3;
+$font-weight-base:        400;
+
+$font-family-primary:     $font-family-cartwheel;
+// $font-family-secondary:   $font-family-yyy;
+
+// Common
+// -------------------------
+
+// Dimensions
+// -------------------------
+$size-container-width: 1024px;
+$size-container-height: 768px;
+
+// Grid (semantic.gs)
+// -------------------------
+// $columns: 12;
+// $column-width: 60;
+// $gutter-width: 20;
+// $total-width: 100%; // use this definition below for a percent-based layout
