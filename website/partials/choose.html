@@ -1,7 +1,7 @@
 <section id="choose">
 
     <header>
-        <h1><span class="huge">Who are you?</span></h1>
+        <h1><span class="huge">{{question}}</span></h1>
     </header>
 
     <article>
@@ -10,6 +10,7 @@
             <li><a href="/big-bean/start"><img class="pict" src="/media/img/choose/big-bean.png" /><span class="text">Big</br>Bean</span></a></li>
             <li><a href="/another-bean/start"><img class="pict" src="/media/img/choose/another-bean.png" /><span class="text">Another</br>Bean</span></a></li>
         </ul>
+        <a class="theend" ng-if="showtheend" href="/">We're all done</a>
     </article>
 
 </section>

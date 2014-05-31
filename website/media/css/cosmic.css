@@ -103,9 +103,9 @@ footer {
   footer.step1 {
     background-image: url(../img/common/step1.png); }
   footer.step2 {
-    background-image: url(../img/common/step1.png); }
+    background-image: url(../img/common/step2.png); }
   footer.step3 {
-    background-image: url(../img/common/step1.png); }
+    background-image: url(../img/common/step3.png); }
 
 #home {
   background-position: 50% 610px; }
@@ -166,12 +166,27 @@ footer {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05); }
+#choose .theend {
+  display: inline-block;
+  margin: 60px auto 0px;
+  padding: 10px 30px 15px;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #009D4A;
+  border-radius: 50px; }
 
 #question header {
   padding-top: 40px; }
 #question ul {
   width: auto;
   margin: 50px auto 0px; }
+#question.show3 {
+  width: 300px; }
+#question.show4 {
+  width: 350px; }
 #question li {
   display: inline-block;
   text-align: center;

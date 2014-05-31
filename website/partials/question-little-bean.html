@@ -5,10 +5,13 @@
     </header>
 
     <article>
-        <ul>
-            <li><a ng-click="submit(1)"><img class="pict" src="http://placehold.it/300x300" /><span class="text">Lorem</span></a></li>
-            <li><a ng-click="submit(2)"><img class="pict" src="http://placehold.it/300x300" /><span class="text">Ipsum</span></a></li>
-            <li><a ng-click="submit(3)"><img class="pict" src="http://placehold.it/300x300" /><span class="text">Happiness</span></a></li>
+        <ul class="answers show{{answers.length}}">
+            <li ng-repeat="element in answers">
+                <a ng-click='submit("little",step,element)'>
+                    <img class="pict" src="{{element.picture}}" />
+                    <span class="text">{{element.text}}</span>
+                </a>
+            </li>
         </ul>
     </article>
 
