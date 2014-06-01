@@ -71,8 +71,3 @@ gulp.task('dev', ['clean','sass', 'watch']);
 gulp.task('default' , function(){
     return gulp.start('dev');
 });
-
-
-// gulp.task('dev', function(){
-//    gulp.start('clean', 'sass', 'jshint', 'js', 'watch');
-// });
