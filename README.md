@@ -29,3 +29,4 @@ winners: [http://cosmichackathon.challengepost.com/submissions](http://cosmichac
 
 the project file: [http://challengepost.com/software/you-ve-bean-in-our-thoughts](http://challengepost.com/software/you-ve-bean-in-our-thoughts)
 
+backend repo: [https://github.com/ebar/cosmic-hackathon](https://github.com/ebar/cosmic-hackathon)
